@@ -5,7 +5,6 @@ import * as fr from '@angular/common/locales/fr';
 
 import { AppComponent } from './app.component';
  import { AppRoutingModule } from './app-routing.module';
-import { QuizzOneComponent } from './quizz-one/quizz-one.component';
 import {FormsModule} from "@angular/forms";
  import {CoreModule} from "./core/core.module";
 import {FaceSnapsModule} from "./face-snaps/face-snaps.module";
@@ -13,9 +12,7 @@ import {LandingPageModule} from "./landing-page/landing-page.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
-
-    QuizzOneComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

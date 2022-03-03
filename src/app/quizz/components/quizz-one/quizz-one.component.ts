@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {concatMap, delay, exhaustMap, mergeMap, tap} from "rxjs/operators";
+import { delay, mergeMap, tap} from "rxjs/operators";
 import {of} from "rxjs";
 
 @Component({
