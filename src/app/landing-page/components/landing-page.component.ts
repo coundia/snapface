@@ -13,9 +13,7 @@ export class LandingPageComponent implements OnInit {
   userMail! :string ;
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   onContinue(): void {
     this.router.navigateByUrl('facesnaps');

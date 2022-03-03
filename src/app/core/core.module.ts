@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {HttpInterceptorProvider} from "./interceptors";
 import {HeaderComponent} from "./components/header/header.component";
 import {RouterModule} from "@angular/router";
+import {HttpClientModule} from "@angular/common/http";
 
 
 
@@ -16,6 +17,7 @@ import {RouterModule} from "@angular/router";
   imports: [
     //*ngIf ngClass directives de base
     CommonModule,
+    HttpClientModule,
     RouterModule
   ],
   providers : [
