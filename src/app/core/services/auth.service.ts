@@ -1,11 +1,12 @@
 import {Injectable} from "@angular/core";
 
+
 @Injectable({
   providedIn : "root"
 }
 )
 export class AuthService{
-  private token = 'MyFakeToken';
+  private token = '';
 
 
 
@@ -16,6 +17,12 @@ export class AuthService{
   login(data: { email: string,password: string}):boolean {
     console.log("data arrived")
     console.log(data)
-     return (data.email == 'papacoundia@gmail.com' && data.password == 'passer')
+     if (data.email == 'papacoundia@gmail.com' && data.password == 'passer'){
+       this.token= btoa(data.email+":"+data.password);;//reverse by atob
+       return true;
+     }else{
+       this.token="";
+       return false
+     }
   }
 }

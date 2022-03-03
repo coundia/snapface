@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingPageComponent } from './landing-page/components/landing-page.component';
 import {QuizzOneComponent} from "./quizz/components/quizz-one/quizz-one.component";
+import {AuthGuard} from "./core/guards/auth.guard";
 
 const routes: Routes = [
-  { path: 'quizz/1', component: QuizzOneComponent },
+  { path: 'quizz/1', component: QuizzOneComponent ,canActivate : [AuthGuard]},
   //implementer le lazy loading
   {
     path: 'facesnaps', loadChildren : () =>import('./face-snaps/face-snaps.module').then(m => m.FaceSnapsModule)
