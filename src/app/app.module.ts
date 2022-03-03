@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
  import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from "@angular/forms";
  import {CoreModule} from "./core/core.module";
-import {FaceSnapsModule} from "./face-snaps/face-snaps.module";
 import {LandingPageModule} from "./landing-page/landing-page.module";
 
 @NgModule({
@@ -18,7 +17,6 @@ import {LandingPageModule} from "./landing-page/landing-page.module";
     BrowserModule,
     FormsModule,
     CoreModule,
-    FaceSnapsModule,
     LandingPageModule,
     AppRoutingModule
   ],
