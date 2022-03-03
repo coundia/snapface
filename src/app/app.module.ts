@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
  import {CoreModule} from "./core/core.module";
 import {LandingPageModule} from "./landing-page/landing-page.module";
+import {AuthModule} from "./auth/auth.module";
+import {AuthRoutingModule} from "./auth/auth-routing.module";
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import {LandingPageModule} from "./landing-page/landing-page.module";
     FormsModule,
     CoreModule,
     LandingPageModule,
+    AuthModule,
     AppRoutingModule
   ],
   providers: [
