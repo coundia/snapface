@@ -20,6 +20,8 @@ export class AuthGuard implements CanActivate {
             this.router.navigateByUrl("/auth/login");
             return false;
         }
-
+        //const token = this.auth.getToken();
+        // return !!token;
+    //Le double bang  !!  est une technique pour transformer une valeur "truthy" en  true  .
     }
 }
