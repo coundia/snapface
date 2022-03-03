@@ -8,3 +8,6 @@
 </header>
 
 <button (click)="onAddNewFaceSnap()" type="button" class="btn btn">+</button>
+<button *ngIf="isConnected()" (click)="onLogoutBtn()" type="button" class="btn btn">Se deconnecter </button>
+<button   *ngIf="!isConnected()"  (click)="onLoginBtn()" type="button" class="btn btn">Se connecter</button>
+
