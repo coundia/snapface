@@ -14,6 +14,7 @@ import { QuizzOneComponent } from './quizz-one/quizz-one.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { NewFaceSnapComponent } from './new-face-snap/new-face-snap.component';
 import {HttpClientModule} from "@angular/common/http";
+import {HttpInterceptorProvider} from "./interceptors";
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import {HttpClientModule} from "@angular/common/http";
     AppRoutingModule
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'fr-FR' }
+    { provide: LOCALE_ID, useValue: 'fr-FR' },HttpInterceptorProvider
   ],
   bootstrap: [AppComponent]
 })
